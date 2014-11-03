@@ -1,9 +1,9 @@
 {
-  "name": "davidboling.github.io",
+  "name": "glogandr.github.io",
   "version": "0.0.0",
-  "homepage": "https://github.com/kadowki/davidboling.github.io",
+  "homepage": "https://github.com/GLoganDR/glogandr.github.io",
   "authors": [
-    "Dave Boling <kadowki@gmail.com>"
+    "Logan Richardson <g.logan.richardson@gmail.com>"
   ],
   "main": "index.html",
   "keywords": [

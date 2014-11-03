@@ -1,21 +1,21 @@
 {
-  "name": "davidboling.github.io",
+  "name": "glogandr.github.io",
   "version": "1.0.0",
-  "description": "A profolio website made and managed by David D. Boling",
+  "description": "A profolio website for me, Logan Richardson",
   "main": "index.html",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1"
   },
   "repository": {
     "type": "git",
-    "url": "https://github.com/kadowki/davidboling.github.io.git"
+    "url": "https://github.com/GLoganDR/glogandr.github.io.git"
   },
-  "author": "David D. Boling",
+  "author": "Logan Richardson",
   "license": "ISC",
   "bugs": {
-    "url": "https://github.com/kadowki/davidboling.github.io/issues"
+    "url": "https://github.com/GLoganDR/glogandr.github.io/issues"
   },
-  "homepage": "https://github.com/kadowki/davidboling.github.io",
+  "homepage": "https://github.com/GLoganDR/glogandr.github.io",
   "dependencies": {
     "connect": "^3.3.2",
     "grunt": "^0.4.5",

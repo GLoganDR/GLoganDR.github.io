@@ -1,9 +1,8 @@
 (function(){
   'use strict';
 
-  var home = angular.module('logan');
+  angular.module('logan')
+  .controller('HomeCtrl', ['$scope', function($scope){
 
-  home.controller('HomeCtrl', ['$scope', function($scope){
-    $scope.title = 'Home Page';
   }]);
 })();

@@ -1,9 +1,9 @@
 (function(){
   'use strict';
-  var index = angular.module('logan', ['ngRoute']);
+  angular.module('logan', ['ngRoute'])
 
   //Angular Routes
-  index.config(['$routeProvider', '$httpProvider', function($routeProvider, $httpProvider){
+  .config(['$routeProvider', '$httpProvider', function($routeProvider, $httpProvider){
     $routeProvider
     .when('/', {templateUrl:'home/home.html', controller:'HomeCtrl'})
     .otherwise({redirectTo:'/'});

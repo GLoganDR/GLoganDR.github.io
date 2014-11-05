@@ -1,50 +1,47 @@
-header#header.site-header(role='banner')
-  #frr-top-bar.top-bar-wrap
-    .container
-      .left-widget-wrap.left
-        .phone.left
-          i.fa.fa-phone
-          | (615)818-9354
-      .right-widget-wrap.right
-        .top-social
-          ul#social-area-top
-            li.twitter
-              a(href='http://www.twitter.com/GLoganDR')
-                i.fa.fa-twitter
-            li.facebook
-              a(href='http://www.facebook.com/loganwlvox')
-                i.fa.fa-facebook
-            li.google-plus
-              a(href='http://www.plus.google.com/+LoganRichardson87')
-                i.fa.fa-google-plus
-            li.github
-              a(href='http://www.github.com/GLoganDR')
-                i.fa.fa-github
-  #frr-top-nav-wrapper
-    .container
-      .row
-        #logo.col-lg-4.col-md-12.col-sm-12
-          .logo-outer
-            a.logo(href='index.html', title='Home')
-              span
-        nav(role='navigation')
-          #top-nav.col-lg-8.col-md-12.col-sm-12
-            .top-nav-wrap.right.navbg
-              a#mobile-menu-trigger.mobile-menu-closed(href='#')
-                i.fa.fa-bars
-              ul#menu.sf-menu
-                li.cl-effect-4
-                  a(href='/#/')
-                    span Home
-                li.cl-effect-4
-                  a(href='/#/')
-                    span About
-                li.cl-effect-4
-                  a(href='/#/')
-                    span Portfolio
-                li.cl-effect-4
-                  a(href='/#/')
-                    span Blog
-                li.cl-effect-4
-                  a(href='/#/')
-                    span Contact
+header#header.site-header(role='banner' ng-controller='NavCtrl')
+        #frr-top-bar.top-bar-wrap
+          .container
+            .left-widget-wrap.left
+              .phone.left
+                i.fa.fa-envelope &nbsp; 
+                a(href='mailto:g.logan.richardson@gmail.com', style='color:#fff') g.logan.richardson@gmail.com
+            .right-widget-wrap.right
+              .top-social
+                ul#social-area-top
+                  li.twitter
+                    a(href='http://www.twitter.com/GLoganDR')
+                      i.fa.fa-twitter
+                  li.facebook
+                    a(href='http://www.facebook.com/loganwlvox')
+                      i.fa.fa-facebook
+                  li.google-plus
+                    a(href='http://www.plus.google.com/+LoganRichardson87')
+                      i.fa.fa-google-plus
+                  li.github
+                    a(href='http://www.github.com/GLoganDR')
+                      i.fa.fa-github
+        #frr-top-nav-wrapper
+          .container
+            .row
+              #logo.col-lg-4.col-md-12.col-sm-12
+              nav(role='navigation')
+                #top-nav.col-lg-8.col-md-12.col-sm-12
+                  .top-nav-wrap.right.navbg
+                    a#mobile-menu-trigger.mobile-menu-closed(href='#')
+                      i.fa.fa-bars
+                    ul#menu.sf-menu
+                      li.cl-effect-4
+                        a(href='/#/')
+                          span Home
+                      li.cl-effect-4
+                        a(href='/#/about')
+                          span About
+                      li.cl-effect-4
+                        a(href='/#/portfolio')
+                          span Portfolio
+                      li.cl-effect-4
+                        a(href='/#/blog')
+                          span Blog
+                      li.cl-effect-4
+                        a(href='/#/contact')
+                          span Contact

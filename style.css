@@ -871,7 +871,7 @@ h4.section-title {
 }
 /* 13-1 - Custome Header */
 #frr-top-bar {
-  background: #3c424f;
+  background: #000;
   padding: 12px 0;
 }
 .phone {
@@ -1869,7 +1869,7 @@ h3.entry-title {
 }
 /* footer */
 footer.site-footer {
-  background: #3c424f;
+  background: #000;
   padding: 60px 0;
   color: #8c989e;
 }

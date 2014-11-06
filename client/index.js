@@ -8,7 +8,7 @@
     .when('/', {templateUrl:'home/home.html', controller:'HomeCtrl'})
     .when('/contact', {templateUrl:'contact/contact.html', controller:'ContactCtrl'})
     .when('/about', {templateUrl:'about/about.html', controller:'AboutCtrl'})
-    .when('/portfolio', {templateURL:'portfolio/portfolio.html', controller:'PortfolioCtrl'})
+    .when('/portfolio', {templateUrl:'portfolio/portfolio.html', controller:'PortfolioCtrl'})
     .otherwise({redirectTo:'/'});
   }]);
 })();

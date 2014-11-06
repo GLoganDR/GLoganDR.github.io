@@ -2,6 +2,6 @@
 'use strict';
 
   angular.module('logan')
-  .controller('ContactCtrl', ['$scope', '$interval', 'Home', function($scope, $interval, Contact){
+  .controller('ContactCtrl', ['$scope', '$interval', function($scope, $interval){
   }]);
 })();

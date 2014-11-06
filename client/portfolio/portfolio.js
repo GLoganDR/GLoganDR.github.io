@@ -2,7 +2,7 @@
 'use strict';
 
   angular.module('logan')
-  .controller('PortfolioCtrl', ['$scope', '$interval', 'Home', function($scope, $interval, Portfolio){
+  .controller('PortfolioCtrl', ['$scope', '$interval', function($scope, $interval){
 
   }]);
 })();

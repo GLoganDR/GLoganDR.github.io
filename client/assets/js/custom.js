@@ -210,11 +210,11 @@
             if ($t.hasClass("mobile-menu-opened")) {
               $t.removeClass("mobile-menu-opened").addClass("mobile-menu-closed");
               $n.slideUp(300);
-              $(".content-wrapper, .site-footer, .logo-outer a").show();
+              $(".logo-outer a").show();
             } else {
               $t.removeClass("mobile-menu-closed").addClass("mobile-menu-opened");
               $n.slideDown(300);
-              $(".content-wrapper, .site-footer, .logo-outer a").hide();
+              $(".logo-outer a").hide();
             }
             event.preventDefault(); 
           });

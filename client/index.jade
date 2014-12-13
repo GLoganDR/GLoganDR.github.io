@@ -35,11 +35,81 @@ head
       script(src='//html5shiv.googlecode.com/svn/trunk/html5.js')
     link(href='assets/js/fancybox/jquery.fancybox.css', rel='stylesheet')
   body
-
     #page.hfeed.site
-      include ./nav.jade
+      header#header.site-header(role='banner')
+        #frr-top-bar.top-bar-wrap
+          .container
+            .left-widget-wrap.left
+              .phone.left
+                i.fa.fa-envelope &nbsp; 
+                a(href='mailto:g.logan.richardson@gmail.com', style='color:#fff') g.logan.richardson@gmail.com
+            .right-widget-wrap.right
+              .top-social
+                ul#social-area-top
+                  li.twitter
+                    a(href='http://www.twitter.com/GLoganDR')
+                      i.fa.fa-twitter
+                  li.facebook
+                    a(href='http://www.facebook.com/loganwlvox')
+                      i.fa.fa-facebook
+                  li.google-plus
+                    a(href='http://www.plus.google.com/+LoganRichardson87')
+                      i.fa.fa-google-plus
+                  li.github
+                    a(href='http://www.github.com/GLoganDR')
+                      i.fa.fa-github
+                  li.linkedin
+                    a(href='http://www.linkedin.com/pub/logan-richardson/38/906/4ab')
+                      i.fa.fa-linkedin
+        #frr-top-nav-wrapper
+          .container
+            .row
+              #logo.col-lg-4.col-md-12.col-sm-12
+              nav(role='navigation')
+                #top-nav.col-lg-8.col-md-12.col-sm-12
+                  .top-nav-wrap.right.navbg
+                    a#mobile-menu-trigger.mobile-menu-closed(href='#')
+                      i.fa.fa-bars
+                    ul#menu.sf-menu
+                      li.cl-effect-4
+                        a(href='/#/')
+                          span Home
+                      li.cl-effect-4
+                        a(href='/#/about')
+                          span About
+                      li.cl-effect-4
+                        a(href='/#/portfolio')
+                          span Portfolio
+                      li.cl-effect-4
+                        a(href='/#/contact')
+                          span Contact
+      br
       #ng-content(ng-view)
-      include ./footer.jade
+      footer#colophon.site-footer(role='contentinfo')
+        .footer-wrapper.container
+          .row
+            .sidebar.footer-sidebar.clearfix
+              .col-lg-4.col-sm-4.col-md-4.widget-1.footer-widget.first.footer-widget     
+              .col-lg-4.col-sm-4.col-md-4.widget-1.footer-widget.last.footer-widget
+                #get_touch.widget.widget_get_touch
+                  h3.widget-title Social Media
+                  ul.footer-tweet
+                    li.facebook
+                      a(href='http://www.facebook.com/loganwlvox')
+                        i.fa.fa-facebook
+                    li.google-plus
+                      a(href='http://www.plus.google.com/+LoganRichardson87')
+                        i.fa.fa-google-plus
+                    li.twitter
+                      a(href='http://www.twitter.com/GLoganDR')
+                        i.fa.fa-lg.fa-twitter
+                    li.github
+                      a(href='http://www.github.com/GLoganDR')
+                        i.fa.fa-github
+                    li.linkedin
+                      a(href='http://www.linkedin.com/pub/logan-richardson/38/906/4ab')
+                        i.fa.fa-linkedin
+              .col-lg-4.col-sm-4.col-md-4.widget-1.footer-widget.footer-widget
 
     //PROJECT DEPENDENCIES FOR PORTFOLIO
     script(src='bower_components/jquery/dist/jquery.js')
@@ -47,7 +117,6 @@ head
     script(src='bower_components/angular-route/angular-route.js')
     script(src='bower_components/bootstrap/dist/js/bootstrap.js')
     script(src='index.js')
-    script(src='nav.js')
     script(src='home/home.js')
     script(src='about/about.js')
     script(src='contact/contact.js')
@@ -89,4 +158,4 @@ head
       script(src='assets/js/html5.js')
       script(src='assets/js/respond.min.js')
     //THIS WAS MOVED INTO HOME.JADE
-    //script(src='assets/js/custom.js')
+    script(src='assets/js/custom.js')

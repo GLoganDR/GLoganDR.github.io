@@ -565,7 +565,7 @@ a:active {
 /* Globally hidden elements when Infinite Scroll is supported and in use. */
 .infinite-scroll .paging-nav, /* Older / Newer Posts Navigation (always hidden) */
 .infinite-scroll.neverending .site-footer { /* Theme Footer (when set to scrolling) */
-  display: none;
+  display: block;
 }
 /* When Infinite Scroll has reached its end we need to re-display elements that were hidden (via .neverending) before */
 .infinity-end.neverending .site-footer {
@@ -1761,6 +1761,7 @@ footer.site-footer {
   font-size: 16px;
   font-weight: normal;
   margin-bottom:21px;
+  text-align: center;
 }
 .footer-sidebar {
   color:#8c989e;

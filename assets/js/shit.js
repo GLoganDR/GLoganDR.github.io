@@ -160,77 +160,13 @@
   function exists(e) {
     return $(e).length > 0;
   }
-   /* ==========================================================================
-   handleMobileMenu 
-   ========================================================================== */    
 
-        function handleMobileMenu() {
-          if ($(window).width() > 1299) {
-            $("#mobile-menu").hide();
-            $("#mobile-menu-trigger").removeClass("mobile-menu-opened").addClass("mobile-menu-closed");
-          } else {  
-            if (!exists("#mobile-menu")) {
-              $("#menu").clone().attr({
-                id: "mobile-menu",
-                "class": "fixed container"
-              }).insertAfter("#header");
-              $("#mobile-menu > li > a, #mobile-menu > li > ul > li > a").each(function() {
-                var $t = $(this);
-                if ($t.next().hasClass('sub-menu') || $t.next().is('ul') || $t.next().is('.sf-mega')) {
-                  $t.append('<span class="fa fa-caret-down mobile-menu-submenu-arrow mobile-menu-submenu-closed"></span>');
-
-                }
-              });
-            $("#mobile-menu").append('');
-              $(".sf-with-ul").click(function(event) {
-                var $t = $(this).children();
-                if ($t.hasClass("mobile-menu-submenu-closed")) {
-                  $t.parent().siblings("ul").slideDown(300);
-                  $t.parent().siblings(".sf-mega").slideDown(300);
-                  $t.removeClass("mobile-menu-submenu-closed fa-caret-down").addClass("mobile-menu-submenu-opened fa-caret-up");
-                } else {
-                  $t.parent().siblings("ul").slideUp(300);
-                  $t.parent().siblings(".sf-mega").slideUp(300);
-                  $t.removeClass("mobile-menu-submenu-opened fa-caret-up").addClass("mobile-menu-submenu-closed fa-caret-down");
-                }
-                event.preventDefault();
-              });
-              
-              $("#mobile-menu li, #mobile-menu li a, #mobile-menu ul").attr("style", "");
-            }  
-          }
-        }
-      /* ==========================================================================
-         showHideMobileMenu
-         ========================================================================== */
-        function showHideMobileMenu() { 
-          $("#mobile-menu-trigger").click(function(event) {
-            var $t = $(this);
-            var $n = $("#mobile-menu");
-            if ($t.hasClass("mobile-menu-opened")) {
-              $t.removeClass("mobile-menu-opened").addClass("mobile-menu-closed");
-              $n.slideUp(300);
-              $(".logo-outer a").show();
-            } else {
-              $t.removeClass("mobile-menu-closed").addClass("mobile-menu-opened");
-              $n.slideDown(300);
-              $(".logo-outer a").hide();
-            }
-            event.preventDefault(); 
-          });
-        }
         function init($contex) {
             LayerSlider();
             Cocaanimated();
             Accordion();
             Tabs();
             Flexslider();
-            //carousel();
-            handleMobileMenu();
-            showHideMobileMenu();
-            jQuery(window).resize(function() { 
-                //carousel();   
-            });
             if(typeof $.fn.superfish != 'undefined'){   
               jQuery('#menu').superfish({
                 delay: 500,
@@ -239,13 +175,6 @@
                 cssArrows: true
               }); 
            }
-           /* ==========================================================================
-           When the window is resized, do
-           ========================================================================== */
-           
-          jQuery(window).resize(function() {
-            handleMobileMenu();
-          });
         }
     } /* END Class */
 

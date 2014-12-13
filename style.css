@@ -746,6 +746,12 @@ aside p {
   color: #FFF;
   transition: 0.5s !important;
 }
+.frr-button-red:hover {
+  background: #7D0900;
+  text-decoration: none;
+  color: #FFF;
+  transition: 0.5s !important;
+}
 .ls-l.frr-button-white.slide {
   position: absolute !important;
 }

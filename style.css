@@ -861,6 +861,8 @@ h4.section-title {
   height: 24px;
   overflow: hidden;
   position: relative;
+  margin: 0px auto;
+  text-align: center;
 }
 .heading-border-inner-border {
   border-color: #e8eaec;
@@ -1025,6 +1027,9 @@ h4.section-title {
 }
 #contact-info-wrap {
   padding-left: 43px;
+  text-align: center;
+  margin-top: 100px;
+  margin-bottom: 400px;
 }
 #contact-form .widget-title,
 #contact-info-wrap .widget-title {
@@ -1436,6 +1441,9 @@ h4.section-title {
   -ms-transform: rotate(-180deg);
   transform: rotate(-180deg);
 }
+h1.section-title {
+  text-align: center;
+}
 /* Slide show */
 #slide-show,
 #slide-show-2,
@@ -1468,18 +1476,20 @@ h4.section-title {
 }
 .ls_large_text_01 {
   font-family: "Lato", "Helvetica Neue", Helvetica, sans-serif;
-  font-size: 48px;
+  font-size: 55px;
   line-height: 52px;
   color: #FFF;
   font-weight: bold;
+  text-shadow: -3px 0 #000000, 0 1px #000000, 3px 0 #000000, 0 -1px #000000;
 }
 .ls_large_text_02 {
   font-family: "Lato", "Helvetica Neue", Helvetica, sans-serif;
-  font-size: 20px;
+  font-size: 35px;
   line-height: 52px;
   color: #FFF;
   font-weight: normal;
   line-height: 30px;
+  text-shadow: -3px 0 #000000, 0 1px #000000, 3px 0 #000000, 0 -1px #000000;
 }
 .button.huge.color {
   font-size: 18px;
@@ -1878,6 +1888,9 @@ h3.entry-title {
   border: 1px solid #FFF;
   text-decoration: underline;
 }
+#post-85 {
+  text-align: center;
+}
 /* footer */
 footer.site-footer {
   background: #000;
@@ -1909,13 +1922,19 @@ footer.site-footer {
 .footer-sidebar .widget_get_touch span {
   font-size: 14px;
 }
+#get_touch {
+  text-align: center;
+  margin: 0px auto;
+}
 .footer-tweet {
   margin: 15px 0 0 0;
   padding: 0;
+  text-align: center;
 }
 .footer-tweet li {
   display: inline-block;
   margin-right: 22px;
+  text-align: center;
 }
 #mobile-menu ul li.facebook a:hover {
   border-color: #43609C !important;
@@ -1929,18 +1948,18 @@ footer.site-footer {
 #mobile-menu ul li.linkedin a:hover {
   border-color: #007BB6 !important;
 }
-#mobile-menu #moile-social ul {
+#mobile-menu #mobile-social ul {
   padding: 0 !important;
   margin: 0 !important;
 }
-#mobile-menu #moile-social ul li {
+#mobile-menu #mobile-social ul li {
   padding-top: 0 !important;
   margin-top: 0 !important;
 }
-#moile-social {
+#mobile-social {
   margin-top: 40px;
 }
-#moile-search {
+#mobile-search {
   display: block !important;
   float: left;
   padding: 10px;
@@ -1948,27 +1967,27 @@ footer.site-footer {
   border-bottom: 1px solid #e7e8ed;
   width: 100%;
 }
-#moile-search .search-field {
+#mobile-search .search-field {
   border: none !important;
   width: 100%;
   text-align: center;
 }
-#moile-social {
+#mobile-social {
   display: block !important;
   width: 100%;
   text-align: center;
   float: left;
 }
-#moile-social ul {
+#mobile-social ul {
   padding: 0;
   margin: 0;
 }
-#moile-social ul li {
+#mobile-social ul li {
   display: inline-block;
   margin-top: 15px;
   margin-right: 5px;
 }
-#moile-social ul li a {
+#mobile-social ul li a {
   color: #8c989f;
   transition: 0.5s;
   display: block;
@@ -1980,7 +1999,7 @@ footer.site-footer {
   border: 1px solid #e8eaec;
   border-radius: 5px;
 }
-#moile-social ul li a:hover {
+#mobile-social ul li a:hover {
   color: #700022;
   border: 1px solid #700022;
   transition: 0.5s;
@@ -2032,6 +2051,24 @@ li.linkedin a:hover {
 }
 .subs_submit:active {
   top: 1px;
+}
+.frr-button-red {
+  font-family: "Lato", "Helvetica Neue", Helvetica, sans-serif;
+  font-size: 18px;
+  color: #FFF !important;
+  background: #700022;
+  display: block;
+  width: 206px;
+  height: 51px;
+  margin: 0px auto;
+  border-radius: 5px;
+  line-height: 50px;
+  text-align: center;
+  transition: 0.5s;
+  position: relative;
+}
+#contactH1 {
+  text-align: center;
 }
 /* Home Slide */
 #layerslider2 .ls-slide h1 {

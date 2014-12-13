@@ -14,13 +14,13 @@
                   | Logan Richardson's Portfolio
                 h4.ls-s3.l1-s1.ls_large_text_02(style='position: absolute; top: 210px; left: 200px; slidedirection: bottom; slideoutdirection: bottom; durationin: 3000; durationout: 750; easingin: easeInOutQuint; easingout: easeInBack; delayin: 1000;') I'm For Hire!!! (I'm Also for Being Hired...)
                 a.button.huge.color.round.ls-s8(href='/#/about', style='position: absolute; top: 250px; left: 200px; slidedirection: bottom; slideoutdirection: bottom; durationin: 3000; durationout: 750; easingin: easeInOutQuint; easingout: easeInOutQuint; delayin: 1100;') About Me
-              .ls-layer.center(style='slidedirection: bottom; slideoutdirection: left; slidedelay: 5000; durationin: 1500; durationout: 1500; delayout: 500;')
+              .ls-layer.center(style='slidedirection: bottom; slideoutdirection: left; slidedelay: 6000; durationin: 1500; durationout: 1500; delayout: 500;')
                 img.ls-bg(src='assets/images/slide_02.jpg', alt='')
                 h1.ls-s3.ls_large_text_01(style='position: absolute; top: 217px; left: 400px; slidedirection: top; slideoutdirection: top; durationin: 3000; durationout: 750; easingin: easeInOutQuint; easingout: easeInBack; delayin: 600;') I am a fun and driven person, 
                 h4.ls-s3.l1-s1.ls_large_text_02(style='position: absolute; top: 296px; left: 400px; slidedirection: bottom; slideoutdirection: bottom; durationin: 3000; durationout: 750; easingin: easeInOutQuint; easingout: easeInBack; delayin: 700;') And I hope to bring my enthusiasm to a great company.
                 .ls-s3.center-button(style='position: absolute; top: 366px; left: 20px; slidedirection: bottom; slideoutdirection: bottom; durationin: 3000; durationout: 750; easingin: easeInOutQuint; easingout: easeInOutQuint; delayin: 1100;')
                   a.button.huge.color.round.ls-s18(href='/#/portfolio') My Portfolio
-              .ls-layer(style='slidedirection: right; slidedelay: 5000; durationin: 1500; durationout: 1500;')
+              .ls-layer(style='slidedirection: right; slidedelay: 6000; durationin: 1500; durationout: 1500;')
                 img.ls-bg(src='assets/images/slide_03.jpg', alt='')
                 h1.ls-s3.ls_large_text_01(style='position: absolute; font-family: Arial; top: 75px; left: 100px; slidedirection: right; slideoutdirection: left; durationin: 3000; durationout: 750; easingin: easeInOutQuint; easingout: easeInBack; delayin: 400;')
                   | My goal is to
@@ -81,15 +81,16 @@
     section#coca-notebook.bortb
       #frr-screen-wrap.container
         .row
-          #screen-images.col-lg-7.col-md-12.col-sm-12.left-effect
+          .col-lg-1
+          #screen-images.col-lg-5.col-md-12.col-sm-12.left-effect
             img(alt='notebook', title='Notebook', src='assets/images/team_01.jpg')
           #screen-content.col-lg-5.col-md-12.col-sm-12.right-effect
-            article#post-85.post.type-post
-              header.entry-header
-                h1.entry-title
-                  |Let's get to work!
-                br
-                a.frr-button-green(href='/#/contact') Contact Me
+            header#post-85.entry-header
+              h1.entry-title
+                |Let's get to work!
+              br
+              a.frr-button-red(href='/#/contact') Contact Me
+          .col-lg-1    
     //End content-wrapper 
 
     ////Included LayerSlider 
